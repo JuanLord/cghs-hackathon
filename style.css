@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .app-icon {
     transition: all 0.3s ease;
     border-radius: 16px;
