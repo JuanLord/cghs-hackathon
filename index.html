@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body style="background-image: url(PHOTO-2024-12-07-18-48-47.jpg); background-size: cover; height: 100vh; margin: 0;">
+    <!-- Main OS Window -->
+    <div id="MES" class="window" style="background-color: #ADD8E6; padding: 20px; border-radius: 16px; width: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <p style="cursor: pointer; text-align: left; display: inline;" id="welcomeclose">❌</p> 
+        <div id="MESHeader" class="windowheader" style="border: solid black; padding: 10px; border-top-left-radius: 16px; border-top-right-radius: 16px; text-align: center; cursor: move; font-size: 200%;">
+            Welcome to the gables hackathon 
+        </div>
+        <p>Hello Fellow Hackers</p>
+        <img style="width: 100px; height: 100px" src="IMG_7256.jpeg" alt="Scott Image" />
+        <p><a href="https://www.instagram.com/cghscomputing?igsh=MWJ2M3FxYzYybHdvcw==">Our Insta</a></p>
+        <p>My favorite  <a href="https://www.coralgablescavaliers.org/">school</a></p>
+        <h2>Stuff about us ;)</h2>
+        <p>Get ready for the ultimate tech showdown at Coral Gables Senior High! The Computer Science Club is hosting an exciting hackathon where students can showcase their creativity, teamwork, and coding skills to solve real-world challenges. Beginners and seasoned programmers are welcome to collaborate, innovate, and have fun. The grand prize? Tickets to an unforgettable Billy Joel concert! Don’t miss this chance to learn, create, and compete!</p>
+        <p>
+            <p>Register with this<a href="https://docs.google.com/forms/d/e/1FAIpQLScEwc3PbIwv2QtZdmcKIZu0HydGyXxm16lJv5kOz3BXZfbJhw/viewform"> form</a></p>
+        </p>
+        
+
+    <P>
+        <div style="text-align: center;">
+            <img src="form-submission-7464-teamworkisimportantintheworkplace-desktop-768x432-1606698141-85.jpg" 
+                 alt="Teamwork Image" style="width: 30%; border-radius: 10px;">
+        </div>
+    </P>
+    </div>
+
+    <!-- New App Window (Movies and Shows) -->
+    <div id="moviesAndShows" class="window" style="background-color: #ffffff; padding: 20px; border-radius: 16px; width: 400px; height: 400px; position: absolute; top: 30%; left: 30%; display: none; overflow: hidden;">
+        <p style="cursor: pointer; text-align: left; display: inline;" id="moviesAndShowsClose">❌</p> 
+        <div id="moviesAndShowsHeader" class="windowheader" style="border: solid black; padding: 10px; border-top-left-radius: 16px; border-top-right-radius: 16px; text-align: center; cursor: move; font-size: 150%;">
+            GGHS computing memories 
+        </div>
+        <!-- Left Side Dates Window -->
+        <div id="datesWindow" style="background-color: white; padding: 0; width: 80px; height: 100%; float: left; margin-right: 10px; border-right: solid 1px #000; overflow-y: auto;">
+            <h4 style="text-align: center; margin: 0;">Dates</h4>
+            <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                <li onclick="openNote('10/20/2024')">08/09/2024</li>
+                <li onclick="openNote('10/11/2024')">08/08/2024</li>
+                  <li onclick="openNote('10/11/2024')">11/19/2024</li>
+            </ul>
+        </div>
+        <div id="noteContent" style="height: 100%; overflow-y: auto; margin-left: 100px;">
+            <p>
+                <h2>club fair (10/20/24)</h2>
+                <img style="align: center; max-width: 300px;" src="e209a97a-29c5-449f-bd2e-b95ad610d5b6.JPG" alt="Ghostbusters Image">
+                Today we had the club fair where we got our club shirts and recruited new members. This was very important as it was our first club fair and thankfully everything went well.
+                
+                <br>
+                <h2>First club meeting (10/11/24) </h2>
+
+                <img style="align: center; max-width: 300px;" src="PHOTO-2024-12-07-18-48-47.jpg" alt="Ghostbusters Image">
+
+                <h2>Thanksgiving meeting (11/19/24) </h2>
+
+                <img style="align: center; max-width: 300px;" src="PHOTO-2024-11-14-21-33-07.jpg" alt="Ghostbusters Image">
+
+                
+                <br>           
+            </p>
+        </div>
+    </div>
+
+    <!-- New App Window (Video Playback) -->
+    <div id="quickHelloVideo" class="window" style="background-color: #ffffff; padding: 20px; border-radius: 16px; width: 480px; height: 320px; position: absolute; top: 30%; left: 30%; display: none; overflow: hidden;">
+        <p style="cursor: pointer; text-align: left; display: inline;" id="quickHelloClose">❌</p> 
+        <video width="100%" height="100%" controls>
+            <source src="me.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="header" style="display: flex; justify-content: space-around; position: absolute; width: 100%; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.25);">
+        <p id="welcomeopen" style="cursor: pointer;"><strong>Ale OS</strong></p>
+        <p>🏫 Trying to get some knowledge in our noggins 👩‍🎓</p>
+        <p id="timeElement"><strong>8/7/2024 10:34 PM</strong></p>
+    </div>
+
+    <div id="desktopApps" style="padding-top: 64px;">
+        <div class="app-icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;" onclick="openMoviesAndShows()">
+            <img src="./IMG_3034.jpg" style="width: 64px; height: 64px; border-radius: 16px;">
+            <p style="margin: 0px; color: #fff; cursor: pointer;">MEMORIES<br>Journal</p>
+        </div>
+        <div class="app-icon" style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content; cursor: pointer;" onclick="openMEVID()">
+            <img src="./IMG_3043.jpg" style="width: 64px; height: 64px; border-radius: 16px;">
+            <p style="margin: 0px; color: #fff; cursor: pointer;">QUICK HELLO</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
